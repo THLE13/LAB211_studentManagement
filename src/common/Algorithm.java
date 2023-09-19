@@ -22,7 +22,7 @@ public class Algorithm extends ArrayList<Student> {
 
     public void creating() {
         int count = 1;
-        while (count <= 2) {
+        while (count <= 10) {
             String studentId = library.inputString("Input student ID: ");
             String studentName = library.inputString("Input name student: ");
             String semester = library.inputString("Input semester: ");
@@ -31,7 +31,7 @@ public class Algorithm extends ArrayList<Student> {
             this.add(new Student(studentId, studentName, semester, sourseName));
             count++;
         }
-        if (count <= 3) {
+        if (count <= 11) {
             while (true) {
                 String s = library.inputString(" Do you want to continue (Y/N)?: ");
                 System.out.println("");
